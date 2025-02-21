@@ -101,78 +101,11 @@ docker-compose up
 
 ```
 election-sentiment-analyzer/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── docker-compose.yml
-├── requirements.txt
-├── package.json
-│
-├── frontend/                      # Next.js Frontend
-│   ├── src/
-│   │   ├── app/                  # Next.js 13+ App Router
-│   │   ├── components/           # Reusable UI components
-│   │   ├── styles/               # Tailwind and custom styles
-│   │   ├── lib/                  # Frontend utilities
-│   │   └── types/                # TypeScript type definitions
-│   ├── public/                   # Static assets
-│   └── tests/                    # Frontend tests
-│
-├── backend/                     # Node.js Backend
-│   ├── src/
-│   │   ├── controllers/         # Route controllers
-│   │   ├── models/              # Database models
-│   │   ├── routes/              # API routes
-│   │   ├── middleware/          # Custom middleware
-│   │   ├── services/            # Business logic
-│   │   └── utils/               # Helper functions
-│   ├── config/                  # Configuration files
-│   └── tests/                   # Backend tests
-│
-├── ml_pipeline/                 # Python ML Components
-│   ├── src/
-│   │   ├── data_collection/     # Data gathering modules
-│   │   │   ├── social_media/    # Social media API integrations
-│   │   │   ├── news_scraper/    # News website scrapers
-│   │   │   ├── youtube_api/     # YouTube data collection
-│   │   │   └── manifesto_parser/ # Political manifesto analysis
-│   │   │
-│   │   ├── data_pipeline/       # Data Integration Pipeline (moved inside ML pipeline)
-│   │   │   ├── collectors/      # Data collection jobs
-│   │   │   ├── transformers/    # Data transformation logic
-│   │   │   ├── loaders/         # Database loading scripts
-│   │   │   └── schedulers/      # Pipeline scheduling
-│   │   │
-│   │   ├── preprocessing/       # Data preprocessing
-│   │   │   ├── text_cleaning/
-│   │   │   ├── feature_engineering/
-│   │   │   └── data_integration/
-│   │   │
-│   │   ├── models/              # ML models
-│   │   │   ├── sentiment_analysis/
-│   │   │   ├── topic_modeling/
-│   │   │   └── prediction/
-│   │   │
-│   │   ├── rag_engine/          # RAG Implementation
-│   │   │   ├── document_store/
-│   │   │   ├── embeddings/
-│   │   │   └── retrieval/
-│   │   │
-│   │   └── evaluation/          # Model evaluation
-│   │
-│   ├── notebooks/               # Jupyter notebooks for analysis
-│   ├── data/                    # Data directory
-│   │   ├── raw/                # Raw collected data
-│   │   ├── processed/          # Processed datasets
-│   │   └── external/           # External data sources
-│   │
-│   └── tests/                   # ML pipeline tests
-│
-└── docs/                        # Documentation
-    ├── api/                   # API documentation
-    ├── ml/                    # ML pipeline documentation
-    ├── deployment/            # Deployment guides
-    └── development/           # Development setup guides
+├── frontend/          # Next.js frontend application
+├── backend/          # Node.js backend API
+├── ml_pipeline/      # Python ML components
+├── data_pipeline/    # Data integration pipeline
+└── docs/            # Documentation
 ```
 
 ## 🔧 Usage
